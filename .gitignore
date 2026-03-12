@@ -1,0 +1,8 @@
+*.exe
+.vscode
+PS/solving/
+*.lik
+*.obj
+*.pdb
+*.prob
+*.ilk
