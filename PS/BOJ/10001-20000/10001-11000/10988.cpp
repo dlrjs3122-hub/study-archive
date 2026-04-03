@@ -1,19 +1,20 @@
-//팰린드롬인지 확인하기
 #include <iostream>
 #include <string>
 
+
 int main() {
-    std::string s;
-    std::cin >> s;
-    int front = 0, rear = s.size()-1;
+    std::string str;
+    std::cin >> str;
+    int front = 0, rear = str.size()-1;
+    bool b = true;
+
     while(front < rear) {
-        if(s[front] != s[rear]) {
-            std::cout << 0;
-            return 0;
-        }
+        if(str[front] != str[rear]) b = false;
         front++;
         rear--;
     }
-    std::cout << 1;
+
+    std::cout << b;
+
     return 0;
 }
